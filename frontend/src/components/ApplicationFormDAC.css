@@ -1,0 +1,196 @@
+/* ApplicationFormDAC.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h1 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.form-navigation {
+  margin-top: 10px;
+}
+
+.form-navigation a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.form-navigation a:hover {
+  color: #002a6e;
+}
+
+.application-form {
+  width: 100%;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.form-table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.form-table td:first-child {
+  font-weight: bold;
+  width: 30%;
+}
+
+.form-table input,
+.form-table select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-table input:focus,
+.form-table select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-button,
+.clear-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.submit-button:hover {
+  background-color: #003d80;
+}
+
+.clear-button {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.clear-button:hover {
+  background-color: #c6352a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-table td:first-child {
+    width: 100%;
+  }
+
+  .form-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .form-table td:first-child {
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #666;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Footer Styles */
+.footer {
+  background-color: #023664;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  color: #59C7F3;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #FAD105;
+  text-shadow: 1px 1px 3px rgba(250, 209, 5, 0.5);
+}
+
+.footer-email {
+  color: #E6E6E6;
+  font-size: 0.95rem;
+}
+
+.footer-email strong {
+  color: #59C7F3;
+}
+
+/* Mobile Footer Layout */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    font-size: 1rem;
+  }
+}
+
+}

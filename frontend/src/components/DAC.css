@@ -1,0 +1,95 @@
+/* src/components/dac.css */
+
+.dac-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dac-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+
+.dac-title {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.dac-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-link {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.apply-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.apply-button:hover {
+  background-color: #357abd;
+}
+
+.dac-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.dac-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+dac-footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #584949;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.dac-footer a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+

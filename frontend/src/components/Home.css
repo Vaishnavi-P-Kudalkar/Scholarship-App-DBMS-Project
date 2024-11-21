@@ -1,0 +1,258 @@
+/* Home.css */
+
+/* Main Container */
+/* Enhanced Gradient Background */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #F0F8FF 0%, #e7e8eb 50%, #f9fcfa 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #023664;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #012c56;
+}
+
+/* Welcome Section */
+.welcome-section {
+  flex-grow: 1;
+  padding: 5rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+}
+
+.welcome-section h1 {
+  color: #023664;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section p {
+  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Button Styles */
+.action-buttons button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.apply-button {
+  background: linear-gradient(135deg, #0490C8, #023664);
+  color: white;
+  box-shadow: 0 4px 15px rgba(4, 144, 200, 0.3);
+}
+
+.apply-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(4, 144, 200, 0.4);
+}
+
+.view-awardhistory-button {
+  background: linear-gradient(135deg, #59C7F3, #0490C8);
+  color: white;
+  box-shadow: 0 4px 15px rgba(89, 199, 243, 0.3);
+}
+
+.view-awardhistory-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(89, 199, 243, 0.4);
+}
+
+.admin-button {
+  background: linear-gradient(135deg, #FAD105, #e6c004);
+  color: #023664;
+  box-shadow: 0 4px 15px rgba(250, 209, 5, 0.3);
+}
+
+.admin-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(250, 209, 5, 0.4);
+}
+
+.logout-button {
+  background-color: #E6E6E6;
+  color: #023664;
+  box-shadow: 0 4px 15px rgba(230, 230, 230, 0.4);
+}
+
+.logout-button:hover {
+  background-color: #d4d4d4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(199, 20, 20, 0.5);
+}
+
+/* Button Ripple Effect */
+.action-buttons button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.action-buttons button:hover::after {
+  width: 350px;
+  height: 350px;
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 3rem 1rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+
+  .action-buttons button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    min-width: unset;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #023664;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  color: #59C7F3;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #FAD105;
+  text-shadow: 1px 1px 3px rgba(250, 209, 5, 0.5);
+}
+
+.footer-email {
+  color: #E6E6E6;
+  font-size: 0.95rem;
+}
+
+.footer-email strong {
+  color: #59C7F3;
+}
+
+/* Mobile Footer Layout */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.action-buttons button:active {
+  animation: buttonClick 0.2s ease-in-out;
+}

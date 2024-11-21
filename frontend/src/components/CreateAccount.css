@@ -1,0 +1,114 @@
+/* CreateAccount.css */
+
+.create-account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+}
+
+.create-account-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.create-account-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.create-account-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-account-form input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+.create-account-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.create-account-form button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+.create-account-form button:active {
+    transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add animations to the form fields when they come into view */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.create-account-form input,
+.create-account-form button {
+    animation: slideInUp 0.8s ease-in-out;
+}
+
+.create-account-form input:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.create-account-form input:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.create-account-form input:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.create-account-form input:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.create-account-form button {
+    animation-delay: 0.5s;
+}

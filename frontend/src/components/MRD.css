@@ -1,0 +1,106 @@
+/* src/components/MRD.css */
+
+.mrd-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Make container fill at least the viewport height */
+}
+
+.mrd-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+}
+
+.mrd-title {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.mrd-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Allow content to grow and push footer down */
+}
+
+.back-link {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.apply-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.apply-button:hover {
+  background-color: #357abd;
+}
+
+.mrd-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.mrd-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.mrd-footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.mrd-footer a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}

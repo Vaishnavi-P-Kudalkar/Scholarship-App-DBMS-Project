@@ -1,0 +1,63 @@
+.view-scholarships-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .view-scholarships-container h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .awards-table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .awards-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  .awards-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .awards-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .awards-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 2rem;
+    color: #dc3545;
+    font-size: 1.1rem;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #666;
+    padding: 1.5rem;
+    font-style: italic;
+  }

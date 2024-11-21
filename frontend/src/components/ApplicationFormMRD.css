@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Header Styles */
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 10px;
+}
+
+.form-header h1 {
+  color: #0077cc;
+  font-size: 24px;
+  margin: 0;
+}
+
+.form-navigation {
+  margin-top: 10px;
+}
+
+.form-navigation a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.form-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.form-table td {
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+.form-table td:first-child {
+  font-weight: bold;
+  color: #333;
+  width: 30%;
+}
+
+.form-table td input,
+.form-table td select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form-table td input:focus,
+.form-table td select:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* Form Buttons */
+.form-buttons {
+  text-align: center;
+}
+
+.submit-button,
+.clear-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.submit-button {
+  background-color: #0077cc;
+  color: #ffffff;
+}
+
+.submit-button:hover {
+  background-color: #005fa3;
+}
+
+.clear-button {
+  background-color: #ff4444;
+  color: #ffffff;
+}
+
+.clear-button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .form-table td:first-child {
+    margin-bottom: 5px;
+  }
+
+  .form-table td input,
+  .form-table td select {
+    margin-bottom: 15px;
+  }
+
+  .form-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submit-button,
+  .clear-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,133 @@
+/* Container Styles */
+.scholarship-container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Header Styles */
+.scholarship-container h1 {
+  font-size: 2.5rem;
+  color: #023664;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.scholarship-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.scholarship-table thead {
+  background: linear-gradient(135deg, #023664, #0490C8);
+  color: #fff;
+}
+
+.scholarship-table th,
+.scholarship-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.scholarship-table tbody tr:nth-child(even) {
+  background: #f4f8fc;
+}
+
+.scholarship-table tbody tr:hover {
+  background: #e7f1fa;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Link Styles */
+.scholarship-link {
+  text-decoration: none;
+  color: #0490C8;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.scholarship-link:hover {
+  color: #023664;
+  text-shadow: 1px 1px 6px rgba(4, 144, 200, 0.5);
+}
+
+/* Footer Styles */
+.footer {
+  background: #023664;
+  color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.footer-content {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-content a {
+  color: #59C7F3;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #FAD105;
+  text-shadow: 1px 1px 4px rgba(250, 209, 5, 0.5);
+}
+
+.footer-email {
+  font-size: 0.95rem;
+}
+
+.footer-email a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scholarship-container {
+    padding: 2rem 1rem;
+  }
+
+  .scholarship-container h1 {
+    font-size: 2rem;
+  }
+
+  .scholarship-table th, .scholarship-table td {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
